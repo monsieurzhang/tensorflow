@@ -147,6 +147,8 @@ Status ConvertConstantsToImmutable(const string& in_graph_filename,
         "' : ", load_graph_status.error_message());
   }
 
+  WriteTextProto(default_env, "_text.txt", graph_def);
+
   NodeConverter node_converter;
 
   // Create output writer.
@@ -168,6 +170,9 @@ Status ConvertConstantsToImmutable(const string& in_graph_filename,
   TF_RETURN_IF_ERROR(writer.SaveProtobuf(
       graph_def, MemmappedFileSystem::kMemmappedPackageDefaultGraphDef));
   TF_RETURN_IF_ERROR(writer.FlushAndClose());
+
+  WriteTextProto(default_env, "_text_2.txt", graph_def);
+
   LOG(INFO) << "Converted " << convert_counter << " nodes";
   return Status::OK();
 }

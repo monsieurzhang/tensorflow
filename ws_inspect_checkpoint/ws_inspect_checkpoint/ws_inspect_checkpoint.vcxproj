@@ -103,12 +103,14 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;COMPILER_MSVC;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\src;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build;C:\zdk_projects\tensorflow;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\eigen\src\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\src;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build;C:\zdk_projects\tensorflow;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\eigen\src\eigen;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\external\zlib_archive;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\external\png_archive;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_lib.dir\Debug\tf_core_lib.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_framework.dir\Debug\tf_core_framework.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\snappy\src\snappy\Debug\snappy.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\Debug\tf_protos_cc.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\Debug\libprotobufd.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\nsync\src\nsync\Debug\nsync.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_cc.dir\Debug\tf_cc.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_cc_framework.dir\Debug\tf_cc_framework.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_cc_ops.dir\Debug\tf_cc_ops.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_cpu.dir\Debug\tf_core_cpu.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_direct_session.dir\Debug\tf_core_direct_session.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_cc_while_loop.dir\Debug\tf_cc_while_loop.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_c.dir\Debug\tf_c.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\Debug\tf_protos_cc.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\Debug\libprotobufd.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\snappy\src\snappy\Debug\snappy.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\nsync\src\nsync\Debug\nsync.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\farmhash\src\farmhash\Debug\farmhash.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_lib.dir\Debug\tf_core_lib.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_framework.dir\Debug\tf_core_framework.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\png\src\png-build\Debug\libpng12_staticd.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\zlib\src\zlib\Debug\zlibstaticd.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\gif\src\gif-build\Debug\giflib.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\jpeg\src\jpeg-build\Debug\libjpeg.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\lmdb\src\lmdb-build\Debug\lmdb.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\src\lib_json\Debug\jsoncpp.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\sqlite\src\sqlite-build\Debug\sqlite.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -136,7 +138,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;COMPILER_MSVC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;COMPILER_MSVC;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\eigen\src\eigen;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\src;C:\zdk_projects\tensorflow;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -144,7 +146,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_lib.dir\Release\tf_core_lib.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_framework.dir\Release\tf_core_framework.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\snappy\src\snappy\Release\snappy.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\Release\tf_protos_cc.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\Release\libprotobuf.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\nsync\src\nsync\Release\nsync.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_cc.dir\Release\tf_cc.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_cc_while_loop.dir\Release\tf_cc_while_loop.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_cpu.dir\Release\tf_core_cpu.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_cc_ops.dir\Release\tf_cc_ops.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_cc_framework.dir\Release\tf_cc_framework.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_c.dir\Release\tf_c.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\Release\tf_protos_cc.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\Release\libprotobuf.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\snappy\src\snappy\Release\snappy.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\nsync\src\nsync\Release\nsync.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\farmhash\install\lib\farmhash.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_lib.dir\Release\tf_core_lib.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\tf_core_framework.dir\Release\tf_core_framework.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\png\install\lib\libpng12_staticd.lib;/WHOLEARCHIVE:C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\zlib\install\lib\zlibstatic.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\gif\src\gif-build\Release\giflib.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\jpeg\src\jpeg-build\Release\libjpeg.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\lmdb\src\lmdb-build\Release\lmdb.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\src\lib_json\Release\jsoncpp.lib;C:\zdk_projects\tensorflow\tensorflow\contrib\cmake\build\sqlite\src\sqlite-build\Release\sqlite.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -156,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\tensorflow\contrib\util\inspect_checkpoint.cc" />
+    <ClCompile Include="..\..\tensorflow\core\kernels\ops_util.cc" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
