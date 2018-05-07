@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ws_inspect_checkpoint", "ws_inspect_checkpoint\ws_inspect_checkpoint.vcxproj", "{648ED455-1E40-4DB0-B62C-92910464ECE7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tf_core_framework", "..\tensorflow\contrib\cmake\build\tf_core_framework.vcxproj", "{DE289FFE-095A-3434-BBD8-39DAF516528F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tf_core_cpu", "..\tensorflow\contrib\cmake\build\tf_core_cpu.vcxproj", "{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,6 +37,30 @@ Global
 		{648ED455-1E40-4DB0-B62C-92910464ECE7}.RelWithDebInfo|x64.Build.0 = Release|x64
 		{648ED455-1E40-4DB0-B62C-92910464ECE7}.RelWithDebInfo|x86.ActiveCfg = Release|Win32
 		{648ED455-1E40-4DB0-B62C-92910464ECE7}.RelWithDebInfo|x86.Build.0 = Release|Win32
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.Debug|x64.ActiveCfg = Debug|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.Debug|x64.Build.0 = Debug|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.Debug|x86.ActiveCfg = Debug|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.MinSizeRel|x86.ActiveCfg = MinSizeRel|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.Release|x64.ActiveCfg = Release|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.Release|x64.Build.0 = Release|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.Release|x86.ActiveCfg = Release|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{DE289FFE-095A-3434-BBD8-39DAF516528F}.RelWithDebInfo|x86.ActiveCfg = RelWithDebInfo|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.Debug|x64.ActiveCfg = Debug|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.Debug|x64.Build.0 = Debug|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.Debug|x86.ActiveCfg = Debug|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.MinSizeRel|x86.ActiveCfg = MinSizeRel|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.Release|x64.ActiveCfg = Release|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.Release|x64.Build.0 = Release|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.Release|x86.ActiveCfg = Release|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{5E6E41A0-CEAC-35A2-A730-8BB657AFB75C}.RelWithDebInfo|x86.ActiveCfg = RelWithDebInfo|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
